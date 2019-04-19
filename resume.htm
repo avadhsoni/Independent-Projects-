@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title></title>
+   <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+         crossorigin="anonymous">
+
+   <script src="js/main.js"></script>
+</head>
+
+<body>
+   
+   <div class="container--lock resumecontainer">
+      <div class="topcolor"></div>
+      <div class="headercolor">
+         <div class="profilepic">
+            <img class="toppic" src="https://i.groupme.com/480x854.png.018f1cb57fad472db9d33d56c751499e.preview">
+         </div>
+      </div>
+      <div class="row resumerow">
+         <div class="xl:col-12 xw:col-12 md:col-12 xs:col-12">
+            <h1 class="resumeH1">This is My Resume</h1>
+            <p class="resumeP">This is the lists of all the jobs I have done that reflect on my resume. I believe they helped me achieve and learn a lot of skills needed in this field of Information Technology. I hope it helps you understand the skills I possess.</p>
+            <div class="workexperience">
+               <div class="projects">
+                  <div class="image1">
+                      <img class="resumeimage1" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Logo">
+                  </div>          
+                  <h3>Intern</h3>
+                  <p class="companyinfo">Apex Technology Systems </p>
+                  <p class="companyinfo">September 2018 - Present</p>
+                  <button id="showmorelink" onclick="show3()" class="showmorelink"> Show/Hide <i class="fas fa-angle-down"></i></button>
+                  <ul class="mywork" id="para3">   
+                        <li class="work1"> Being an intern has taught me many different languages that I have never learned to code. Completing the tasks given to me can become challenging at times due to the conflicts that occur while programming certain things. </li>
+                        <li class="work1">I enjoy the tasks I am given because they include designing which I can see the output of very quickly. The errors I run into are positioning and also some back end ones that have to do with the databases. </li>
+                        <li class="work1">Although it is an unpaid intership, I am there for the experience that I need to attain in order to land a well paying job in the future. I also want to be able to enjoy the job that I do because I am going to spend majority of my day doing it. </li>
+                     </ul>
+   
+                  </a>
+               </div>
+               <div class="line"></div>
+               <div class="projects1">
+                  <div class="image1">
+                     <img class="resumeimage1" src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Logo">
+                  </div>
+                  <h3>Staff Assistant </h3>
+                  <p class="companyinfo">Circle of life Day Care Center </p>
+                  <p class="companyinfo"> Summer 2014</p>
+                  <button id="showmorelink" onclick="show()" class="showmorelink"> Show/Hide <i class="fas fa-angle-down"></i></button>
+                  <ul class="mywork" id="para">   
+                     <li class="work1"> Being an intern has taught me many different languages that I have never learned to code. Completing the tasks given to me can become challenging at times due to the conflicts that occur while programming certain things. </li>
+                     <li class="work1">I enjoy the tasks I am given because they include designing which I can see the output of very quickly. The errors I run into are positioning and also some back end ones that have to do with the databases. </li>
+                     <li class="work1">Although it is an unpaid intership, I am there for the experience that I need to attain in order to land a well paying job in the future. I also want to be able to enjoy the job that I do because I am going to spend majority of my day doing it. </li>
+                  </ul>
+               </div>
+                <div class="line"></div>
+               <div class="projects2">
+               <div class="image1">
+                  <img class="resumeimage1" src="https://cdn-images-1.medium.com/max/1200/1*uXgzo-Js9zsZMBNaO-gDbw.jpeg" alt="Logo">
+               </div>
+                  <h3>Objected Oriented Programming Project</h3>
+                  <p class="companyinfo"> Text Adventure Game</p>
+                  <p class="companyinfo">Fall-2018</p>
+                  <button id="showmorelink" onclick="show2()" class="showmorelink"> Show/Hide <i class="fas fa-angle-down"></i></button>
+                  <ul class="mywork" id="para2">
+                     <li class="work1"> TextAdventure game doesn't involve designing at all. </li>
+                     <li class="work1">The concepts needed to be implemented in the program are really tough.</li>
+                     <li class="work1">Even after facing challenges, I learned a lot</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <form name = "myForm">
+      <div class="container--lock cont2">
+         <div class="row contactmebox">
+            <div class="xl:col-12 xw:col-12  md:col-12 xs:col-12 formheading">
+               <h1>Contact me</h1>
+            </div>
+               <div class="xl:col-6 xw:col-6 md:col-12 xs:col-12 boxes1">
+                  <label for="Firstname">Your first name:</label><br>
+                  <input type="text" class="firstname" id="error1" name="name" placeholder="First name" onblur="nameVal(this.value)">
+               </div>
+
+               <div class="xl:col-6 xw:col-6 md:col-12  xs:col-12 boxes2">
+                  <label for="Lastname"> Your last name:</label><br>
+                  <input type="text" class="lastname" id="error2" name="name" placeholder="Last name" onblur="LastnameVal(this.value)">
+               </div>
+
+               <div class="xl:col-6 xw:col-6 md:col-12 xs:col-12 boxes3">
+                  <label for="email">Your email:</label><br>
+                  <input type="email" class="email" id="error4" name="email" placeholder="you@example.com"onblur="emailVal(this.value)" >
+               </div>
+
+               <div class="xl:col-6 xw:col-6 md:col-12 xs:col-12 boxes4">
+                  <label for="phonenumber"> Your Phone number:</label><br>
+                  <input type="tel" class="phonenumber" id="error3" name="tel" placeholder="Phone" onblur="phoneVal(this.value)">
+               </div>
+         </div>
+         <div class="row contactboxes3">
+            <div class="xl:col-12 md:col-12 xs:col-12 boxes5">
+               <label for="msg">Reason for contacting me today</label><br>
+               <input type="text" class="message" name="message" onblur="inputVal(this.value)">
+            </div>
+            <div class="button">
+               <button class="sendbutton">Send</button>
+            </div>
+         </div>
+      </div>
+      </form>
+   </div>
+
+</body>
+
+</html>
